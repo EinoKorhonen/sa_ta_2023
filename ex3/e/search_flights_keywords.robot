@@ -11,7 +11,6 @@ Close pages
 
 Select departure
     [Arguments]  ${city}
-
     select departure city  ${city}
 
 select destination
@@ -24,4 +23,6 @@ Search Flights
     set test variable  ${flights}
 
 Flights are found
+    [Arguments]  ${flights}
+    Log To Console     ${flights}
     Should Not Be Empty     ${flights}
