@@ -23,6 +23,4 @@ Search Flights
     set test variable  ${flights}
 
 Flights are found
-    [Arguments]  ${flights}
-    Log To Console     ${flights}
     Should Not Be Empty     ${flights}
